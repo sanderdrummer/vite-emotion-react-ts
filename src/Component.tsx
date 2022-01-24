@@ -7,7 +7,7 @@ export const SomeComponent = () => {
     >
       <div
         css={{
-          background: "red",
+          color: "blue",
         }}
       >
         such emotion

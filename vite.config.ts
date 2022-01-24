@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -6,6 +8,11 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "jsx",
     jsxInject: `import { jsx } from '@emotion/react'`,
+  },
+  test: {
+    global: true,
+    environment: "jsdom",
+    setupFiles: ["./src/setupTests.ts"],
   },
   plugins: [
     react({
