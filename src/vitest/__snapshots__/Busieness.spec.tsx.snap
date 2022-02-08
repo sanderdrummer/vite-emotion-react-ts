@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`BusinessComponent > maches snapshot 1`] = `
+<button>
+  click me
+</button>
+`;

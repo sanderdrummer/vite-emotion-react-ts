@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@emotion/babel-plugin': ^11.7.2
   '@emotion/react': ^11.7.1
-  '@testing-library/jest-dom': ^5.16.1
+  '@testing-library/jest-dom': ^5.16.2
   '@testing-library/react': ^12.1.2
   '@types/node': ^17.0.10
   '@types/react': ^17.0.33
@@ -14,7 +14,7 @@ specifiers:
   react-dom: ^17.0.2
   typescript: ^4.4.4
   vite: ^2.7.2
-  vitest: ^0.2.0
+  vitest: ^0.2.8
 
 dependencies:
   '@emotion/react': 11.7.1_b08e3c15324cbe90a6ff8fcd416c932c
@@ -23,7 +23,7 @@ dependencies:
 
 devDependencies:
   '@emotion/babel-plugin': 11.7.2
-  '@testing-library/jest-dom': 5.16.1
+  '@testing-library/jest-dom': 5.16.2
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@types/node': 17.0.10
   '@types/react': 17.0.38
@@ -32,7 +32,7 @@ devDependencies:
   jsdom: 19.0.0
   typescript: 4.5.5
   vite: 2.7.13
-  vitest: 0.2.0_jsdom@19.0.0
+  vitest: 0.2.8_jsdom@19.0.0
 
 packages:
 
@@ -415,8 +415,8 @@ packages:
       pretty-format: 27.4.6
     dev: true
 
-  /@testing-library/jest-dom/5.16.1:
-    resolution: {integrity: sha512-ajUJdfDIuTCadB79ukO+0l8O+QwN0LiSxDaYUTI4LndbbUsGi6rWU1SCexXzBA2NSjlVB9/vbkasQIL3tmPBjw==}
+  /@testing-library/jest-dom/5.16.2:
+    resolution: {integrity: sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.16.7
@@ -634,14 +634,15 @@ packages:
     resolution: {integrity: sha512-csfD/GpHMqgEL3V3uIgosvh+SVIQvCh43SNu9HRbP1lnxkKm1kjDG4f32PP571JplkLjfS+mg2p1gxR7MYrrIA==}
     dev: true
 
-  /chai/4.3.4:
-    resolution: {integrity: sha512-yS5H68VYOCtN1cjfwumDSuzn/9c+yza4f3reKXlE5rUg7SFcCEy90gJvydNgOYtblyf4Zi6jIWRnXOgErta0KA==}
+  /chai/4.3.6:
+    resolution: {integrity: sha512-bbcp3YfHCUzMOvKqsztczerVgBKSsEijCySNlHHbX3VG1nskvqjz5Rfso1gGwD6w6oOV3eI60pKuMOV5MV7p3Q==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
       deep-eql: 3.0.1
       get-func-name: 2.0.0
+      loupe: 2.3.1
       pathval: 1.1.1
       type-detect: 4.0.8
     dev: true
@@ -1268,6 +1269,12 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
+  /loupe/2.3.1:
+    resolution: {integrity: sha512-EN1D3jyVmaX4tnajVlfbREU4axL647hLec1h/PXAb8CPDMJiYitcWF2UeLVNttRqaIqQs4x+mRvXf+d+TlDrCA==}
+    dependencies:
+      get-func-name: 2.0.0
+    dev: true
+
   /lz-string/1.4.4:
     resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=}
     hasBin: true
@@ -1557,8 +1564,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /tinyspy/0.2.8:
-    resolution: {integrity: sha512-4VXqQzzh9gC5uOLk77cLr9R3wqJq07xJlgM9IUdCNJCet139r+046ETKbU1x7mGs7B0k7eopyH5U6yflbBXNyA==}
+  /tinyspy/0.2.10:
+    resolution: {integrity: sha512-Qij6rGWCDjWIejxCXXVi6bNgvrYBp3PbqC4cBP/0fD6WHDOHCw09Zd13CsxrDqSR5PFq01WeqDws8t5lz5sH0A==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -1630,8 +1637,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.2.0_jsdom@19.0.0:
-    resolution: {integrity: sha512-+8c0UN/KKQe/ye0CCCqYuPbOEZl12Fhb5hVkCiL2DdBA4jOEgHDd35AZqdHVBXaAoTedS3MD5G/LhkOxCWB8pw==}
+  /vitest/0.2.8_jsdom@19.0.0:
+    resolution: {integrity: sha512-shzN00EkvUNzP8cSykhrOCwB7MlGxcwJNjOtHhbayvexGnqX6oLOfEp3OQixWdDJpEaqNiE3Lcie0WsOnoQ3Og==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
@@ -1651,11 +1658,11 @@ packages:
     dependencies:
       '@types/chai': 4.3.0
       '@types/chai-subset': 1.3.3
-      chai: 4.3.4
+      chai: 4.3.6
       jsdom: 19.0.0
       local-pkg: 0.4.1
       tinypool: 0.1.1
-      tinyspy: 0.2.8
+      tinyspy: 0.2.10
       vite: 2.7.13
     transitivePeerDependencies:
       - less

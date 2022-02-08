@@ -1,6 +1,8 @@
 import { ThemeProvider } from "@emotion/react";
 import { useState } from "react";
 import { SomeComponent } from "./Component";
+import { Dynamic } from "./emotion/Dynamic";
+import { Static } from "./emotion/Static";
 
 const theme = {
   colors: {
@@ -28,6 +30,8 @@ function App() {
       >
         <header className="App-header">so cool</header>
         <SomeComponent />
+        <Static />
+        <Dynamic />
       </div>
     </ThemeProvider>
   );

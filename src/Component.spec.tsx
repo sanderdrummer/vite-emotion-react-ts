@@ -17,7 +17,6 @@ describe("Component", () => {
       </ThemeProvider>
     );
 
-    // @ts-expect-error
     expect(screen.getByText("such emotion")).toBeInTheDocument();
   });
 });
