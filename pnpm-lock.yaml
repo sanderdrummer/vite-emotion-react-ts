@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@emotion/babel-plugin': ^11.10.6
   '@emotion/react': ^11.10.6
+  '@swc/plugin-emotion': ^2.5.43
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^14.0.0
   '@types/node': ^18.14.2
@@ -23,6 +24,7 @@ dependencies:
 
 devDependencies:
   '@emotion/babel-plugin': 11.10.6
+  '@swc/plugin-emotion': 2.5.43
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
   '@types/node': 18.14.2
@@ -474,6 +476,10 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.3.37
       '@swc/core-win32-ia32-msvc': 1.3.37
       '@swc/core-win32-x64-msvc': 1.3.37
+    dev: true
+
+  /@swc/plugin-emotion/2.5.43:
+    resolution: {integrity: sha512-9rB2iSbDw0a5yx3hebwNzOkk8y6OyMYZZuj8a9rU1NbJZCjnXYAMpugqF9vRAs2HsveKlbGJ+BGbd763bDy5QQ==}
     dev: true
 
   /@testing-library/dom/9.0.0:
